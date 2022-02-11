@@ -1,0 +1,19 @@
+<table class="table table-bordered table-striped tabla">
+    <thead>
+        <tr class="filters">
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Ciudad</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let alumno of alumnos">
+            <td>{{ alumno.id }}</td>
+            <td>{{ alumno.nombre }}</td>
+            <td>{{ alumno.apellidos }}</td>
+            <td>{{ alumno.ciudad }}</td>
+        </tr>
+    </tbody>
+</table>
