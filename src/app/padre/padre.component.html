@@ -1,0 +1,13 @@
+<h2>Componente Padre</h2>
+<!--
+<div style=" border-style: solid; border-width: 2px; border-color: orange; padding: 10px">
+    <app-hijo [aviso]="valorPadre"></app-hijo>
+    <app-hijo *ngFor="let avisop of avisos" [aviso]="avisop"></app-hijo>
+</div>
+-->
+
+<div>
+    <app-hijo *ngFor="let avisop of avisos" [aviso]="avisop"
+        (mensajeMarcado)="mostrarMensaje()"></app-hijo>
+    <h3 style="text-align:center"> {{ texto }}</h3>
+</div>
